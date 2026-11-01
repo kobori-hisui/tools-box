@@ -1,0 +1,12 @@
+node_modules
+.output
+.wxt
+stats.html
+web-ext.config.local.ts
+.env
+.env.local
+.env.publish
+.env.submit
+*.log
+test-results
+playwright-report

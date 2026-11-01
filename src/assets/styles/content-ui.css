@@ -1,0 +1,13 @@
+@import './tokens.css';
+
+.tb-palette {
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  background: var(--tb-bg);
+  color: var(--tb-fg);
+  border-radius: var(--tb-radius);
+  padding: calc(var(--tb-space) * 2);
+}
