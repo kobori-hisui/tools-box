@@ -1,1 +1,46 @@
-/* estilos especificos de onboarding */
+.onb {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: system-ui, sans-serif;
+}
+.onb input {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0 16px;
+  box-sizing: border-box;
+}
+.onb-note {
+  opacity: 0.7;
+}
+.onb h2 {
+  margin: 20px 0 6px;
+  font-size: 1.1rem;
+}
+.onb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.onb li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  padding: 4px 0;
+  border-bottom: 1px solid #8884;
+}
+.onb li strong {
+  min-width: 220px;
+}
+.apis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.apis code {
+  font-size: 0.75rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #8882;
+}

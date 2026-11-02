@@ -1,0 +1,15 @@
+[package]
+name = "toolbox-sidecar"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "toolbox-sidecar"
+path = "src/main.rs"
+
+[dependencies]
+toolbox-protocol = { path = "../protocol" }
+toolbox-core = { path = "../core" }
+serde.workspace = true
+serde_json.workspace = true

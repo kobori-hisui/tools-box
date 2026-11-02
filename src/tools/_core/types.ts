@@ -19,6 +19,10 @@ export interface ToolMeta {
   /** Permisos opcionales que la herramienta pedira en runtime */
   permissions?: string[];
   browsers?: Array<'chrome' | 'firefox' | 'edge' | 'safari'>;
+  /** Needs the Go host / Rust sidecar. Lists the protocol methods it calls. */
+  native?: { methods: string[]; optional?: boolean };
+  /** Extension APIs the tool needs (see platform/capabilities.ts CAPABILITIES keys). */
+  requires?: string[];
   experimental?: boolean;
 }
 

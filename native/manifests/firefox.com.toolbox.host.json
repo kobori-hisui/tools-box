@@ -1,0 +1,7 @@
+{
+  "name": "com.toolbox.host",
+  "description": "Toolbox native host",
+  "path": "/ABSOLUTE/PATH/TO/toolbox-host",
+  "type": "stdio",
+  "allowed_extensions": ["toolbox@example.com"]
+}

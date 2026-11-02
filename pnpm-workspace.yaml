@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: false
+# pnpm >= 10 lee estos ajustes desde aqui (ya no desde el campo "pnpm" de package.json)
+overrides:
+  '@vitejs/plugin-react': ^5.0.0

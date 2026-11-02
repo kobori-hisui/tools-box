@@ -1,0 +1,9 @@
+{
+  "allowedRoots": ["/home/you/Downloads/toolbox"],
+  "sidecar": "/ABSOLUTE/PATH/TO/toolbox-sidecar",
+  "daemon": {
+    "addr": "127.0.0.1:48731",
+    "token": "CHANGE-ME-at-least-16-characters",
+    "allowedOrigins": ["chrome-extension://REPLACE_WITH_EXTENSION_ID"]
+  }
+}

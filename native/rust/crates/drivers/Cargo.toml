@@ -1,0 +1,11 @@
+[package]
+name = "toolbox-drivers"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Add per-OS low-level crates here when a tool needs them, for example:
+#   serialport = "4"      # serial / COM ports
+#   hidapi = "2"          # HID devices
+#   nusb = "0.1"          # raw USB

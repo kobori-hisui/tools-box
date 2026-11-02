@@ -1,0 +1,22 @@
+{
+  "tools": [
+    { "id": "json-formatter", "name": "JSON Formatter", "description": "Format, validate and minify JSON.", "category": "developer", "keywords": ["json", "format", "validate"] },
+    { "id": "word-counter", "name": "Word Counter", "description": "Count words, characters and reading time.", "category": "text", "keywords": ["words", "count", "characters"] },
+    { "id": "page-media", "name": "Page Media Downloader", "description": "List and download images/videos from the current page.", "category": "downloaders", "keywords": ["download", "images", "video"] },
+    { "id": "base64", "name": "Base64 Encoder", "description": "Encode and decode Base64.", "category": "developer", "keywords": ["base64", "encode", "decode"] },
+    { "id": "color-picker", "name": "Color Picker", "description": "Pick colors from any page.", "category": "design", "keywords": ["color", "eyedropper"] },
+    { "id": "url-encoder", "name": "URL Encoder", "description": "Encode and decode URLs.", "category": "developer", "keywords": ["url", "encode", "decode"] }
+  ],
+  "cases": [
+    { "query": "json", "expected": ["json-formatter"] },
+    { "query": "encode", "expected": ["base64", "url-encoder"] },
+    { "query": "encode", "limit": 1, "expected": ["base64"] },
+    { "query": "decode", "expected": ["base64", "url-encoder"] },
+    { "query": "pick", "expected": ["color-picker"] },
+    { "query": "down", "expected": ["page-media"] },
+    { "query": "image video", "expected": ["page-media"] },
+    { "query": "word", "expected": ["word-counter"] },
+    { "query": "", "limit": 3, "expected": ["json-formatter", "word-counter", "page-media"] },
+    { "query": "xyz", "expected": [] }
+  ]
+}

@@ -1,0 +1,12 @@
+export * as browserAction from './browserAction';
+export * as browserSettings from './browserSettings';
+export * as captivePortal from './captivePortal';
+export * as clipboard from './clipboard';
+export * as contextualIdentities from './contextualIdentities';
+export * as dns from './dns';
+export * as find from './find';
+export * as menus from './menus';
+export * as pageAction from './pageAction';
+export * as pkcs11 from './pkcs11';
+export * as sidebarAction from './sidebarAction';
+export * as theme from './theme';

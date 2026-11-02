@@ -1,0 +1,1 @@
+{"id":"2","method":"fs.watch","params":{"path":"/tmp/inbox","recursive":true}}

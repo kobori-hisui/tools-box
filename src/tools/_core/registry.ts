@@ -1,4 +1,5 @@
 import { MatchPattern } from 'wxt/utils/match-patterns';
+import { search } from '@/core/search/search';
 import type { CategoryMeta, ToolImpl, ToolMeta } from './types';
 
 // meta.ts: eager (liviano). index.ts: lazy (code-splitting por herramienta).
@@ -26,12 +27,8 @@ export const getTool = (id: string) => byId.get(id);
 export const getCategories = (): CategoryMeta[] =>
   Object.values(categoryModules).map((m) => m.default).sort((a, b) => a.order - b.order);
 
-export function searchTools(query: string): ToolMeta[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return tools;
-  return tools.filter((t) =>
-    [t.name, t.description, t.category, ...t.keywords].join(' ').toLowerCase().includes(q),
-  );
+export function searchTools(query: string, limit = 0): ToolMeta[] {
+  return search(tools, query, limit);
 }
 
 export function getToolsForUrl(url: string): ToolMeta[] {
